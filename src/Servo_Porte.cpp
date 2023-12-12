@@ -12,9 +12,9 @@ void Servo_Porte::init(int servoPin){
 }
 
 void Servo_Porte::activate() {
-  write(180); // Activer l'electroaimant
+  write(0); // Activer l'electroaimant
 }
 
 void Servo_Porte::deactivate() {
-  write(0); // Désactiver l'electroaimant
+  write(180); // Désactiver l'electroaimant
 }
