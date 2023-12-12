@@ -1,6 +1,6 @@
 #include "NFCREADER.h"
 
-#define SS_PIN D8
+#define SS_PIN D3
 #define RST_PIN D0
 
 MFRC522 rfid(SS_PIN, RST_PIN); // Instance de classe
