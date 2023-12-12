@@ -15,7 +15,9 @@ Nous avons utilisé pour ce projet :
 
 ## Conception
 
-Insérer diagrammes 
+### Diagramme de classes :
+
+![diagramme de classe](Diagramme_Classes.png)
 
 ## Déroulement du projet
 
