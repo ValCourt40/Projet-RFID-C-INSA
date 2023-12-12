@@ -1,6 +1,6 @@
 #include "NFCWRITER.h"
 
-#define SS_PIN D8
+#define SS_PIN D3
 #define RST_PIN D0
 MFRC522 rfids(SS_PIN, RST_PIN); // Instance de classe
 MFRC522::MIFARE_Key keys; // Instance de la cle(badge)
