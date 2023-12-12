@@ -8,7 +8,7 @@
 Classe_NFC_Lecture nfc;
 LED leds(D1,D2);
 Servo_Porte servo;
-
+Buzzer buzz(D8);
 
 byte CodeVerif=0; 
 byte CodeMauvais=0; 
@@ -20,6 +20,7 @@ Serial.begin(9600);
 nfc.init_nfc();
 leds.init();
 servo.init(D9);
+buzz.stop();
 
 }
 
@@ -36,7 +37,7 @@ if (CodeVerif==1 )
 {
   
   leds.clignoteBleuVert(6,100);
-  delay(1000);
+  buzz.validationSound();
   servo.activate();
   delay(5000);
   servo.deactivate();
@@ -44,6 +45,7 @@ if (CodeVerif==1 )
 }
 else if(CodeVerif==0 && CodeMauvais == 1) {
   leds.clignoteRouge(6, 100);
+  buzz.refusalSound();
   delay(1000);
   nfc.stopAcces();
 }
