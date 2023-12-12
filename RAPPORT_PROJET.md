@@ -38,6 +38,12 @@ Enfin, nous avons la classe héritée ""Classe_NFC_Ecriture", qui permet non pas
 
 Nous avons enfin joint nos différents morceaux de code en créant le GitHub. Nous avons finalisé le côté matériel du projet en réalisant les branchements, en fixant les différents éléments à la porte et en effectuant de nombreux tests.
 
+## Comment faire marcher le système?
+
+Pour faire marcher notre système, nous disposons de deux badges RFID différents : un mauvais et un bon.  
+Lorsque la carte est alimentée, nous allons alors passer devant le capteur un premier badge, le mauvais par exemple. Nous allons observer un actionnement de la LED et du Buzzer. Ensuite, nous allons passer le second badge et nous allons voir cette fois-ci un actionnement de la LED, du Buzzer et du Servomoteur.  
+Ce dernier va alors pivoter et libérer la porte, permettant l'entrée. Quelques secondes plus tard, le système se referme et se remet en attente de lecture d'un badge.
+
 ## Contributing
 
 Thanks to @ValCourt40 and @Thornary for this project
