@@ -34,8 +34,11 @@ Pour le servomoteur, nous avons créé une classe avec les méthodes associées 
 
 Nous avons pu compter sur Maxime qui a réalisé chez lui une porte en bois avec deux charnières plastiques.  
 Quant à l'élément principal, le capteur RFID, nous avons finalement réussi à le coder en utilisant des fichiers .h déjà existants : Arduino.h, SPI.h, MRFC522.h et stdint.h. Nous avons créé d'abord une classe mère "Classe_NFC_Lecture", qui nous permet de lire l'UID du badge (=son identifiant) et les données contenues dessus. Nous avons ensuite une méthode qui permet de comparer les octets de l'UID du badge avec ceux du capteur.   
-Aussi, nous avons la classe héritée ""Classe_NFC_Ecriture", qui permet non pas de modifier l'UID du badge NFC, mais d'écrire des données dessus comme le nom et les coordonnées du propriétaire du badge.
+Aussi, nous avons la classe héritée ""Classe_NFC_Ecriture", qui permet non pas de modifier l'UID du badge NFC, mais d'écrire des données dessus comme le nom et les coordonnées du propriétaire du badge.  
 
+Pour respecter la conception objet, nous avons créé une classe "Application" qui est une classe fille de toutes nos classes citées précedemment. Dans cette classe, nous avons un constructeur, une méthode "init" pour initialiser et une méthode "run" pour lancer le système.  
+Dans le main, nous déclarons donc un objet Application, et nous lui appliquons les méthodes "init()" et "run()".  
+ 
 Nous avons enfin joint nos différents morceaux de code en créant le GitHub. Nous avons finalisé le côté matériel du projet en réalisant les branchements, en fixant les différents éléments à la porte et en effectuant de nombreux tests.
 
 ## Comment faire marcher le système?
