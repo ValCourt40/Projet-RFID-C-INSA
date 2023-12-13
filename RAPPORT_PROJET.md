@@ -17,7 +17,7 @@ Nous avons utilisé pour ce projet :
 
 ### Diagramme de classes :
 
-![diagramme de classe](Diagramme_Classes.png)
+![diagramme de classe](Diagramme_Classes_Final.png)
 
 ## Déroulement du projet
 
